@@ -16,6 +16,8 @@ $white-bg: #F5F5F5;
 @import "./layout/base";
 @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
 
+//z-indexes
+$z-fixed-menu: 100;
 
 //components
 @import "./components/sections/hero.scss";
@@ -33,5 +35,7 @@ $white-bg: #F5F5F5;
 @import "./components/sections/form.scss";
 @import "./components/sections/order.scss";
 @import "./components/blocks/radio.scss";
+@import "./components/sections/fixed-menu.scss";
+
 
 

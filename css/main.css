@@ -25,8 +25,9 @@ body {
 }
 
 .container {
-  margin: 0 auto;
   width: 940px;
+  margin: 0 auto;
+  position: relative;
 }
 
 * {
@@ -303,7 +304,7 @@ footer {
   padding-right: 0;
 }
 .benefits__item:last-child::before {
-  content: "";
+  display: none;
 }
 
 .benefit {
@@ -346,4 +347,121 @@ footer {
   position: absolute;
   bottom: -25px;
   left: 50px;
+}
+
+.reviews__display {
+  background: #F8FAF9;
+  padding: 42px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.reviews__display::before {
+  content: "";
+  display: block;
+  width: 83px;
+  height: 83px;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: -58px;
+}
+
+.reviews__display-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.reviews__avatar {
+  width: 253px;
+  height: 264px;
+  margin-right: 40px;
+}
+
+.reviews__avatar-img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.reviews__content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.reviews__title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 22px;
+  color: #292929;
+}
+
+.reviews__text {
+  margin-bottom: 36px;
+  font-size: 16px;
+}
+
+.reviews__author {
+  font-size: 18px;
+  font-weight: bold;
+  color: #292929;
+}
+
+.reviews__switcher {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.interactive-avatar {
+  width: 80px;
+  height: 80px;
+  border: 4px solid transparent;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 6px;
+  position: relative;
+}
+.interactive-avatar--active {
+  border-color: #E01F3D;
+}
+
+.interactive-avatar__link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: block;
+}
+
+.interactive-avatar__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.reviews-section {
+  position: relative;
+}
+.reviews-section::before {
+  content: url("./../../../img/decor_reviews.svg");
+  position: absolute;
+  height: 36px;
+  width: 36px;
+  bottom: -18px;
+  left: 62px;
 }

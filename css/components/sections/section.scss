@@ -4,6 +4,13 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  &--font-color--white{
+    color:$white;
+    .section__title{
+      color: inherit;
+    }
+  }
 }
 
 .section__title{

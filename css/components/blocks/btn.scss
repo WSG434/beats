@@ -10,15 +10,28 @@
     transition: 0.3s;
     max-width: 148px;
     text-align: center;
+    border: none;
 
     &--theme--red{
         color: $white;
         background: $red;
+        
+        &:hover {
+        background: $red--hover;
+        box-shadow: 0 0 25px 0 rgba(225, 0, 0, 0.134);
+
+        }
     }
 
-    &:hover {
+    &--theme--transparent{
+        background: transparent;
         color: $white;
-        background: $red--hover;
-        box-shadow: 0 0 25px 0 rgba(225, 217, 0, 0.134);
+        text-transform: none;
+        
+        &:hover {
+        color: $red;
     }
+    }
+
+    
 }

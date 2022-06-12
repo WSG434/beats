@@ -226,16 +226,24 @@ footer {
   transition: 0.3s;
   max-width: 148px;
   text-align: center;
+  border: none;
 }
 .btn--theme--red {
   color: #fff;
   background: #E01F3D;
 }
-.btn:hover {
-  color: #fff;
+.btn--theme--red:hover {
   background: #CA1B36;
-  -webkit-box-shadow: 0 0 25px 0 rgba(225, 217, 0, 0.134);
-          box-shadow: 0 0 25px 0 rgba(225, 217, 0, 0.134);
+  -webkit-box-shadow: 0 0 25px 0 rgba(225, 0, 0, 0.134);
+          box-shadow: 0 0 25px 0 rgba(225, 0, 0, 0.134);
+}
+.btn--theme--transparent {
+  background: transparent;
+  color: #fff;
+  text-transform: none;
+}
+.btn--theme--transparent:hover {
+  color: #E01F3D;
 }
 
 .section {
@@ -251,6 +259,12 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+.section--font-color--white {
+  color: #fff;
+}
+.section--font-color--white .section__title {
+  color: inherit;
 }
 
 .section__title {
@@ -464,4 +478,115 @@ footer {
   width: 36px;
   bottom: -18px;
   left: 62px;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form__col {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-right: 20px;
+}
+.form__col:last-child {
+  margin-right: 0;
+}
+
+.form__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 18px;
+}
+
+.form__block {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-right: 20px;
+}
+.form__block:last-child {
+  margin-right: 0;
+}
+
+.form__input {
+  width: 100%;
+  border: none;
+  padding: 18px 11px;
+  border-radius: 5px;
+  border: solid 3px transparent;
+}
+.form__input--textarea {
+  height: 180px;
+  resize: none;
+}
+.form__input:focus {
+  border-color: #E01F3D;
+  outline: none;
+}
+
+.form__controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 18px;
+}
+
+.form__btns {
+  padding-top: 30px;
+}
+
+.order-section {
+  background: url(./../../../img/order_bg.png) top center no-repeat;
+}
+
+.radio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.radio--checkbox .radio__visible {
+  border-radius: 3px;
+}
+.radio--checkbox .radio__visible::before {
+  background: url("./../../../img/tick.png") center center no-repeat;
+}
+
+.radio__elem {
+  display: none;
+}
+.radio__elem:checked ~ .radio__visible:before {
+  display: block;
+}
+
+.radio__visible {
+  width: 26px;
+  height: 26px;
+  position: relative;
+  background: #fff;
+  border-radius: 50%;
+}
+.radio__visible::before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  background: #E01F3D;
+  border-radius: 50%;
+  position: absolute;
+  display: none;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }

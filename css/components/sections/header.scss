@@ -16,10 +16,21 @@
   }
 }
 
+.menu__link{
+  &:hover{
+    transition: 0.3s;
+    color:$red;
+  }
+}
+
 .phone-number {
   font-style: 22px;
   display: flex;
   align-items: center; 
+  &:hover{
+    transition: 0.3s;
+    color:$red;
+  }
 }
 
 .phone-number__icon-elem{

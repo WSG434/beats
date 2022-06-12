@@ -8,7 +8,13 @@
   position: relative;
   &--active{
     border-color: $red; 
+    transition: 0.3s;
   }
+  &:hover{
+    border-color: $red; 
+    transition: 0.3s;
+  }
+
 }
 
 .interactive-avatar__link{

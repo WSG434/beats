@@ -169,6 +169,12 @@ footer {
   margin-right: 0;
 }
 
+.menu__link:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #E01F3D;
+}
+
 .phone-number {
   font-style: 22px;
   display: -webkit-box;
@@ -177,6 +183,11 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.phone-number:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #E01F3D;
 }
 
 .phone-number__icon-elem {
@@ -449,6 +460,13 @@ footer {
 }
 .interactive-avatar--active {
   border-color: #E01F3D;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.interactive-avatar:hover {
+  border-color: #E01F3D;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .interactive-avatar__link {
@@ -555,6 +573,7 @@ footer {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  margin-right: 10px;
 }
 .radio--checkbox .radio__visible {
   border-radius: 3px;
@@ -576,6 +595,7 @@ footer {
   position: relative;
   background: #fff;
   border-radius: 50%;
+  margin-right: 10px;
 }
 .radio__visible::before {
   content: "";

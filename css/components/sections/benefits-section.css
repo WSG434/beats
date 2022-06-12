@@ -1,9 +1,0 @@
-.benefits-section {
-  position: relative;
-}
-.benefits-section::before {
-  content: url("./../../../img/decor_section2.png");
-  position: absolute;
-  bottom: -50px;
-  left: -50px;
-}

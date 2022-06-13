@@ -33,6 +33,11 @@
   padding: 18px 11px;
   border-radius: 5px;
   border: solid 3px transparent;
+
+  &:hover{
+      border-color:$red;
+      transition: 0.3s;
+  }
   
   &--textarea {
     height: 180px;
@@ -43,6 +48,8 @@
     border-color:$red;
     outline: none;
   }
+
+  
 }
 
 .form__controls {

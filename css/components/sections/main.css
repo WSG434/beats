@@ -141,56 +141,6 @@ footer {
   width: 110%;
 }
 
-.hero {
-  color: #000;
-  height: 100%;
-  background-color: #F5F5F5;
-  height: 100vh;
-  min-height: 652px;
-  position: relative;
-}
-.hero::before {
-  position: absolute;
-  content: url("./../../../img/decor_header.png");
-  bottom: -30px;
-  left: 80%;
-}
-
-.hero__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  height: 100%;
-  padding: 25px 0 66px;
-  background: url("./../../../img/beats_header.png") right center/50% auto no-repeat;
-}
-
-.hero__title-section {
-  width: 35%;
-}
-
-.hero__main-title {
-  font-style: 48px;
-  line-height: 1.4;
-  font-weight: bold;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-}
-
-.hero__title-desc {
-  font-style: 21px;
-  margin-bottom: 85px;
-  padding-right: 10%;
-  width: 110%;
-}
-
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -588,6 +538,11 @@ footer {
   border-radius: 5px;
   border: solid 3px transparent;
 }
+.form__input:hover {
+  border-color: #E01F3D;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
 .form__input--textarea {
   height: 180px;
   resize: none;
@@ -612,6 +567,7 @@ footer {
 
 .order-section {
   background: url("./../../../img/order_bg.png") top center no-repeat;
+  background-size: cover;
 }
 
 .radio {
@@ -624,6 +580,11 @@ footer {
       -ms-user-select: none;
           user-select: none;
   margin-right: 10px;
+}
+.radio:hover {
+  color: #E01F3D;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .radio--checkbox .radio__visible {
   border-radius: 3px;

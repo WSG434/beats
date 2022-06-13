@@ -4,6 +4,11 @@
   user-select: none;
   margin-right: 10px;
 
+  &:hover{
+      color: $red;
+      transition: 0.3s;
+    }
+
 
   &--checkbox {
     .radio__visible{

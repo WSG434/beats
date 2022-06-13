@@ -1,0 +1,42 @@
+$baseFontFamily: 'Play';
+$containerWidth: 940px;
+$baseFontSize: 18px;
+
+//colors
+$white: #fff;
+$black: #292929;
+$gray: #666666;
+$red: #E01F3D;
+$red--hover: #CA1B36;
+$white-bg: #F5F5F5;
+
+
+//setups
+@import "./../../layout/normalize.css";
+@import "./../../layout/base.scss";
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+
+//z-indexes
+$z-fixed-menu: 100;
+
+//components
+@import "./hero.scss";
+@import "./hero.scss";
+@import "./header.scss";
+@import "./features.scss";
+@import "./../blocks/btn.scss";
+@import "./section.scss";
+@import "./headline.scss";
+@import "./benefits.scss";
+@import "./benefit.scss";
+@import "./benefits-section.scss";
+@import "./reviews.scss";
+@import "./interactive-avatar.scss";
+@import "./reviews-section.scss";
+@import "./form.scss";
+@import "./order.scss";
+@import "./../blocks/radio.scss";
+@import "./fixed-menu.scss";
+
+
+

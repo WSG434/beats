@@ -136,7 +136,7 @@ footer {
 
 .hero__title-desc {
   font-style: 21px;
-  margin-bottom: 85px;
+  margin-bottom: 55px;
   padding-right: 10%;
   width: 110%;
 }
@@ -238,6 +238,8 @@ footer {
   max-width: 148px;
   text-align: center;
   border: none;
+  cursor: pointer;
+  min-height: 50px;
 }
 .btn--theme--red {
   color: #fff;
@@ -247,6 +249,9 @@ footer {
   background: #CA1B36;
   -webkit-box-shadow: 0 0 25px 0 rgba(225, 0, 0, 0.134);
           box-shadow: 0 0 25px 0 rgba(225, 0, 0, 0.134);
+}
+.btn--db {
+  display: block;
 }
 .btn--theme--transparent {
   background: transparent;

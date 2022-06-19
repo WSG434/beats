@@ -2,6 +2,14 @@ $baseFontFamily: 'Play';
 $containerWidth: 940px;
 $baseFontSize: 18px;
 
+
+//breakpoints
+
+$tablets: 768px;
+$phones: 480px;
+
+
+
 //colors
 $white: #fff;
 $black: #292929;
@@ -9,6 +17,8 @@ $gray: #666666;
 $red: #E01F3D;
 $red--hover: #CA1B36;
 $white-bg: #F5F5F5;
+
+@import "./../../layout/media.scss";
 
 
 //setups

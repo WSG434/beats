@@ -53,9 +53,14 @@
     text-align: center;
     
     &::before{
-      content: url("./../../../img/beats_header-tablets.png");
-      // width: 323px;
-      // height: 323px;
+      // content: url("./../../../img/beats_header-tablets.png");
+      content:"";
+      background: url("./../../../img/beats_header-tablets.png") center / auto no-repeat;
+      height: 100%;
+      width: 100%;
+      background-size: contain;
+      
+
 
     }
   }

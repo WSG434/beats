@@ -1,0 +1,80 @@
+
+.footer {
+    // position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 36px 28px 30px;
+    width: 100%;
+    height: 100%;
+    &-container{
+      margin-top: auto;
+      // width: 100%;
+      // height: 100%;
+    }
+
+}
+
+.footer__col {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    
+    &--align--right {
+      align-items: flex-end;
+      svg{
+        height: 32px;
+        width: 32px;
+      }
+    }
+}
+
+.footer-section{
+  min-height: 0;
+  height: auto;
+}
+
+
+
+
+
+/* socials.css */
+
+/* Socials */
+
+.map{
+  width:100%;
+  height: 100%;
+  margin-bottom: 30px;
+  &__img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.socials {
+  display: flex;
+}
+
+.social{
+  &__item {
+    margin-right: 10px;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+  }
+
+  &__icon{
+    fill:#B3B3B3;
+    &:hover{
+      fill:black;
+      transition: .3s;
+    }
+  }
+
+}
+
+
+
+// width="100" height="100"

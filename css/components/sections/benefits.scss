@@ -7,12 +7,24 @@
   padding: 0 3%;
   position: relative;
   
+  // &:before {
+  //   content: url("./../../../img/separator.png");
+  //   position: absolute;
+  //   top: rem(50px);
+  //   right: 0;
+  //   transform: translateX(50%);
+
   &:before {
-    content: url("./../../../img/separator.png");
+    content:"";
+    background: url("./../../../img/separator.png") center / auto no-repeat;
+
     position: absolute;
     top: rem(50px);
     right: 0;
     transform: translateX(50%);
+    height: 3.6vh; 
+    width: 7vw;
+    background-size: contain;
   }
 
 

@@ -11,6 +11,7 @@
       color: inherit;
     }
   }
+
 }
 
 .section__title{
@@ -21,4 +22,19 @@
   text-align: center;
   text-transform: uppercase;
   color: $black;
+  
+}
+
+@include tablets {
+  .section__title--order{
+    white-space: nowrap;
+    margin-bottom: rem(15px);
+  }
+}
+
+  @include phones {
+    .section__title--order{
+      font-size: rem(32px);
+      white-space: wrap;
+    }
 }

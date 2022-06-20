@@ -4,6 +4,10 @@
   margin-bottom: rem(20px);
   position: relative;
 
+  @include phones {
+    padding: rem(35px) rem(25px);
+  }
+
   &::before{
     content: "";
     display: block;

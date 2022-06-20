@@ -36,6 +36,7 @@
 
   @include tablets {
     background: none;
+    padding: rem(25px) 0 rem(45px);
   }
 
 }
@@ -81,6 +82,11 @@
 
   @include tablets{
     padding: 0 18%;
+    margin-bottom: rem(15px);
+  }
+
+  @include phones{
+    padding: 0 10%;
     margin-bottom: rem(15px);
   }
 }

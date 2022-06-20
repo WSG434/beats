@@ -3,6 +3,14 @@
   cursor: pointer;
   user-select: none;
   margin-right: rem(10px);
+  
+  @include tablets {
+    margin-bottom: rem(10px);
+  }
+
+  @include phones {
+    margin-bottom: rem(10px);
+  }
 
   &:hover{
       color: $red;

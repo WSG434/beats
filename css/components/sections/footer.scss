@@ -1,6 +1,5 @@
 
 .footer {
-    // position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -56,6 +55,7 @@
 /* Socials */
 
 .map{
+  max-width: 100vw;
   width:100%;
   height: 100%;
   margin-bottom: 30px;

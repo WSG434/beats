@@ -38,9 +38,8 @@ $z-fixed-menu: 100;
 @import "./headline.scss";
 @import "./benefits.scss";
 @import "./benefit.scss";
-@import "./benefits-section.scss";
 @import "./reviews.scss";
-@import "./interactive-avatar.scss";
+@import "./../blocks/interactive-avatar.scss";
 @import "./reviews-section.scss";
 @import "./form.scss";
 @import "./order.scss";
@@ -49,7 +48,9 @@ $z-fixed-menu: 100;
 @import "./../blocks/hamburger.scss";
 @import "./footer.scss";
 @import "./../blocks/fullscreen-menu.scss";
-
+@import "./map.scss";
+@import "./slider.scss";
+@import "./../blocks/socials.scss";
 
 
 

@@ -46,6 +46,14 @@
   border-radius: rem(5px);
   border: solid rem(3px) transparent;
 
+  @include tablets{
+    padding: rem(14px) rem(11px);
+    }
+
+  @include phones {
+    padding: rem(10px) rem(11px);
+  }
+
   &:hover{
       border-color:$red;
       transition: 0.3s;
@@ -55,7 +63,11 @@
     height: rem(180px);
     resize: none;
     @include tablets{
-      height: rem(100px);
+      height: rem(52px);
+    }
+
+    @include phones {
+      height: rem(82px);
     }
   }
   
@@ -80,5 +92,13 @@
   padding-top:rem(30px);
   display: flex;
   justify-content: center;
+
+  @include tablets{
+    padding-top:rem(20px);
+    }
+
+  @include phones {
+    padding-top:rem(10px);
+  }
 }
 

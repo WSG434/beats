@@ -1474,9 +1474,6 @@ footer {
   display: flex;
 }
 .team__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1512,7 +1509,7 @@ footer {
 .team__member:after {
   content: "";
   position: absolute;
-  top: 9px;
+  top: 8px;
   right: -15px;
   border: 8px solid transparent;
   width: 0px;
@@ -1532,4 +1529,9 @@ footer {
   color: #666666;
   font-weight: 400;
   font-size: 0.8888888889rem;
+}
+.team__desc {
+  display: block;
+  height: 0;
+  overflow: hidden;
 }

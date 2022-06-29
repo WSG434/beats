@@ -1148,7 +1148,7 @@ footer {
 }
 .slider__img {
   margin-right: 2.7777777778rem;
-  width: 50%;
+  width: 45%;
   position: relative;
 }
 @media screen and (max-width: 768px) {
@@ -1325,9 +1325,6 @@ footer {
   }
 }
 
-#right {
-  margin-left: 1.8333333333rem;
-}
 @media screen and (max-width: 768px) {
   #right {
     position: absolute;
@@ -1346,7 +1343,7 @@ footer {
 .arrow {
   font-size: 2rem;
   color: black;
-  width: 1.6666666667rem;
+  width: 2.2222222222rem;
 }
 @media screen and (max-width: 768px) {
   .arrow {
@@ -1363,7 +1360,7 @@ footer {
   display: none;
   position: absolute;
   top: 0rem;
-  right: 2.7777777778rem;
+  right: 4.1666666667rem;
   border-radius: 4px;
   background: rgba(255, 255, 255, 0.8);
   padding: 1.5555555556rem 1.3888888889rem 1.8888888889rem 1.7777777778rem;

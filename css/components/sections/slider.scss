@@ -5,7 +5,7 @@
 
   &__img{
     margin-right: rem(50px);
-    width: 50%;
+    width: 45%;
     position: relative;
     @include tablets{
       margin-right: 0;
@@ -84,7 +84,6 @@
     text-transform: uppercase;  
     font-size: rem(36px);
     margin-bottom: rem(24px);
-    
   }
 
   &__desc{
@@ -141,7 +140,7 @@
 }
 
 #right{
-  margin-left: rem(33px);
+  // margin-left: rem(33px);
   @include tablets{
     position: absolute;
     top: 20%;
@@ -158,7 +157,7 @@
 .arrow{
   font-size: rem(36px);
   color: black;
-  width: rem(30px);
+  width: rem(40px);
 
   @include tablets{
     margin: 0;
@@ -176,7 +175,7 @@
   display:none;
   position: absolute;
   top: rem(0px);
-  right: rem(50px);
+  right: rem(75px);
   border-radius: 4px;
   background: #FFFFFFCC;
   padding: rem(28px) rem(25px) rem(34px) rem(32px);

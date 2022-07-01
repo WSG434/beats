@@ -1167,6 +1167,12 @@ footer {
       -ms-flex-align: center;
           align-items: center;
 }
+.slider .bx-wrapper {
+  border: 0;
+  background: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
 .slider__img {
   margin-right: 2.7777777778rem;
   width: 45%;
@@ -1183,9 +1189,6 @@ footer {
   }
 }
 .slider__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1363,6 +1366,7 @@ footer {
 
 .arrow {
   font-size: 2rem;
+  display: block;
   color: black;
   width: 2.2222222222rem;
 }
@@ -1418,6 +1422,8 @@ footer {
           flex-direction: column;
   width: 100%;
   height: 100%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .dropdown__item {
   display: -webkit-box;

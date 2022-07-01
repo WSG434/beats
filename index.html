@@ -246,14 +246,15 @@
             </section>
 
 
-            <section class="section">
+            <section class="section team-section">
                 <div class="container">
                     <h2 class="section__title">Команда</h2>
                     <div class="team">
-                        <ul class="team__list">
+
+                        <ul class="team__list team--version--desktop">
                             <li class="team__item">
                                 <img src="./img/team1.png" alt="avatar1" class="team__avatar">
-                                <a href="#" class="team__member">Борис Федорович</a>
+                                <button href="#" class="team__member">Борис Федорович</button>
                                 <div class="team__desc">
                                     <div class="team__content">
                                         <div class="team__role">Главный технолог</div>
@@ -263,7 +264,7 @@
                             </li>
                             <li class="team__item">
                                 <img src="./img/team2.png" alt="avatar2" class="team__avatar">
-                                <a href="#" class="team__member">Алла Иванова</a>
+                                <button href="#" class="team__member">Алла Иванова</button>
                                 <div class="team__desc">
                                     <div class="team__content">
                                         <div class="team__role">Специалист по упаковке</div>
@@ -273,7 +274,7 @@
                             </li>
                             <li class="team__item">
                                 <img src="./img/team3.png" alt="avatar3" class="team__avatar">
-                                <a href="#" class="team__member">Кирилл Матросов</a>
+                                <button href="#" class="team__member">Кирилл Матросов</button>
                                 <div class="team__desc">
                                     <div class="team__content">
                                         <div class="team__role">Оператор</div>
@@ -283,7 +284,7 @@
                             </li>
                             <li class="team__item">
                                 <img src="./img/team4.png" alt="avatar4" class="team__avatar">
-                                <a href="#" class="team__member">Мила Рыжкова</a>
+                                <button href="#" class="team__member">Мила Рыжкова</button>
                                 <div class="team__desc">
                                     <div class="team__content">
                                         <div class="team__role">PR, маркетинг</div>
@@ -292,6 +293,51 @@
                                 </div>
                             </li>
                         </ul>
+
+
+                        <ul class="team__list team--version--mobile">
+                            <li class="team__item">
+                                <button href="#" class="team__member">Борис Федорович</button>
+                                <div class="team__desc">
+                                    <div class="team__content">
+                                        <img src="./img/team1.png" alt="avatar1" class="team__avatar">
+                                        <div class="team__role">Главный технолог</div>
+                                        <div class="team__role-desc">Отвечает за вкусовые качества и калорийность.</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="team__item">
+                                <button href="#" class="team__member">Алла Иванова</button>
+                                <div class="team__desc">
+                                    <div class="team__content">
+                                        <img src="./img/team2.png" alt="avatar2" class="team__avatar">
+                                        <div class="team__role">Специалист по упаковке</div>
+                                        <div class="team__role-desc">Автор запоминающегося стиля наших батончиков.</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="team__item">
+                                <button href="#" class="team__member">Кирилл Матросов</button>
+                                <div class="team__desc">
+                                    <div class="team__content">
+                                        <img src="./img/team3.png" alt="avatar3" class="team__avatar">
+                                        <div class="team__role">Оператор</div>
+                                        <div class="team__role-desc">Разработал дизайн наушников beats solo 3.</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="team__item">
+                                <button href="#" class="team__member">Мила Рыжкова</button>
+                                <div class="team__desc">
+                                    <div class="team__content">
+                                        <img src="./img/team4.png" alt="avatar4" class="team__avatar">
+                                        <div class="team__role">PR, маркетинг</div>
+                                        <div class="team__role-desc">По всем вопросам сотрудничества и рекламы писать только Миле.</div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
                     </div>
                 </div>
             </section>
@@ -302,38 +348,82 @@
                     <h2 class="section__title section__title--reviews">Отзывы</h2>
                     <div class="reviews">
                         <div class="reviews__display">
-                            <div class="reviews__display-inner">
-                                <div class="reviews__avatar">
-                                    <img src="./img/reviews1.png" alt="" class="reviews__avatar-img">
+                            <div class="reviews__list">
+                                <div class="reviews__item reviews__item--active" data-linked-with="one">
+                                    <div class="reviews__display-inner">
+                                        <div class="reviews__avatar">
+                                            <img src="./img/reviews1.png" alt="" class="reviews__avatar-img">
+                                        </div>
+                                        <article class="reviews__content">
+                                            <h3 class="reviews__title">Отличный звук</h3>
+                                            <div class="reviews__text">
+                                                <p>
+                                                    Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. 
+                                                    В течение дня сижу за компьютером и часто отходить в кафе или на кухню просто не могу себе позволить. 
+                                                    А батончик – он всегда под рукой. Это приятно и удобно. 
+                                                </p>
+                                            </div>
+                                            <div class="reviews__author">
+                                                Билли Айлиш
+                                            </div>
+                                        </article>
+                                    </div>
                                 </div>
-                                <article class="reviews__content">
-                                    <h3 class="reviews__title">Отличный звук</h3>
-                                    <div class="reviews__text">
-                                        <p>
-                                            Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. 
-                                            В течение дня сижу за компьютером и часто отходить в кафе или на кухню просто не могу себе позволить. 
-                                            А батончик – он всегда под рукой. Это приятно и удобно. 
-                                        </p>
+                                <div class="reviews__item" data-linked-with="two">
+                                    <div class="reviews__display-inner">
+                                        <div class="reviews__avatar">
+                                            <img src="./img/reviews2.png" alt="" class="reviews__avatar-img">
+                                        </div>
+                                        <article class="reviews__content">
+                                            <h3 class="reviews__title">Отличный звук2</h3>
+                                            <div class="reviews__text">
+                                                <p>
+                                                    Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. 
+                                                    В течение дня сижу за компьютером и часто отходить в кафе или на кухню просто не могу себе позволить. 
+                                                    А батончик – он всегда под рукой. Это приятно и удобно. 
+                                                </p>
+                                            </div>
+                                            <div class="reviews__author">
+                                                Билли Айлиш
+                                            </div>
+                                        </article>
                                     </div>
-                                    <div class="reviews__author">
-                                        Билли Айлиш
+                                </div>
+                                <div class="reviews__item" data-linked-with="three">
+                                    <div class="reviews__display-inner">
+                                        <div class="reviews__avatar">
+                                            <img src="./img/reviews3.png" alt="" class="reviews__avatar-img">
+                                        </div>
+                                        <article class="reviews__content">
+                                            <h3 class="reviews__title">Отличный звук3</h3>
+                                            <div class="reviews__text">
+                                                <p>
+                                                    Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. 
+                                                    В течение дня сижу за компьютером и часто отходить в кафе или на кухню просто не могу себе позволить. 
+                                                    А батончик – он всегда под рукой. Это приятно и удобно. 
+                                                </p>
+                                            </div>
+                                            <div class="reviews__author">
+                                                Билли Айлиш
+                                            </div>
+                                        </article>
                                     </div>
-                                </article>
+                                </div>
                             </div>
                         </div>
                         <ul class="reviews__switcher">
                             <li class="reviews__switcher-item interactive-avatar interactive-avatar--active">
-                                <a href="#" class="interactive-avatar__link">
+                                <a href="#" class="interactive-avatar__link" data-open="one">
                                     <img src="./img/reviews1.png" alt="reviews-foto1" class="interactive-avatar__img">
                                 </a>
                             </li>
                             <li class="reviews__switcher-item interactive-avatar">
-                                <a href="#" class="interactive-avatar__link">
+                                <a href="#" class="interactive-avatar__link" data-open="two">
                                     <img src="./img/reviews2.png" alt="reviews-foto2" class="interactive-avatar__img">
                                 </a>
                             </li>
                             <li class="reviews__switcher-item interactive-avatar">
-                                <a href="#" class="interactive-avatar__link">
+                                <a href="#" class="interactive-avatar__link" data-open="three">
                                     <img src="./img/reviews3.png" alt="reviews-foto3" class="interactive-avatar__img">
                                 </a>
                             </li>
@@ -423,10 +513,10 @@
                 </div>
             </section>
 
-            <section class="section">
-                <div class="container map">
-                    <img src="./img/map.png" alt="map" class="map__img">
-                </div>
+            <!-- <section class="section"> -->
+            <div class="container map">
+                <img src="./img/map.png" alt="map" class="map__img">
+            </div>
 
 
             <section class="section footer-section">
@@ -513,8 +603,10 @@
         </div>
     </div>
 
+    <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/fullscreen-menu.js"></script>
     <script src="./js/team.js"></script>
+    <script src="./js/slideshow.js"></script>
 
 
 </body>

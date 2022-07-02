@@ -1166,6 +1166,7 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 .slider .bx-wrapper {
   border: 0;
@@ -1242,12 +1243,12 @@ footer {
 }
 @media screen and (max-width: 768px) {
   .slider__dropdown {
-    display: none;
+    display: none !important;
   }
 }
 @media screen and (max-width: 480px) {
   .slider__dropdown {
-    display: none;
+    display: none !important;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1331,44 +1332,20 @@ footer {
   font-weight: 700;
 }
 
-#left {
-  margin-right: 1.8333333333rem;
-}
-@media screen and (max-width: 768px) {
-  #left {
-    position: absolute;
-    top: 20%;
-    left: 9%;
-  }
-}
-@media screen and (max-width: 480px) {
-  #left {
-    position: absolute;
-    top: 20%;
-    left: 9%;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  #right {
-    position: absolute;
-    top: 20%;
-    left: 82%;
-  }
-}
-@media screen and (max-width: 480px) {
-  #right {
-    position: absolute;
-    top: 20%;
-    left: 82%;
-  }
-}
-
 .arrow {
   font-size: 2rem;
-  display: block;
   color: black;
   width: 2.2222222222rem;
+}
+.arrow--left {
+  position: absolute;
+  top: 50%;
+  left: -3%;
+}
+.arrow--right {
+  position: absolute;
+  top: 50%;
+  left: 99%;
 }
 @media screen and (max-width: 768px) {
   .arrow {
@@ -1385,7 +1362,7 @@ footer {
   display: none;
   position: absolute;
   top: 0rem;
-  right: 4.1666666667rem;
+  right: 5.5555555556rem;
   border-radius: 4px;
   background: rgba(255, 255, 255, 0.8);
   padding: 1.5555555556rem 1.3888888889rem 1.8888888889rem 1.7777777778rem;

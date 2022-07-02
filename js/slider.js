@@ -4,8 +4,8 @@
 // });
 
 const slider = $('.slider__list').bxSlider({
-  pager: false
-  // controls: false
+  pager: false,
+  controls: false
 });
 
 $('.arrow--left').click((e) => {

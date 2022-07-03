@@ -8,6 +8,7 @@
     <title>Beats</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
     <link rel="stylesheet" href="./css/components/sections/main.css">
 
 
@@ -709,15 +710,16 @@
                 <div class="container">
                     <h2 class="section__title section__title--order">Закажите доставку</h2>
                     <form class="form">
+                        <input type="hidden" name="to" value="some@mail.com">
                         <div class="form__col">
                             <div class="form__row">
                                 <label class="form__block">
                                     <div class="form__title">Имя</div>
-                                    <input type="text" class="form__input">
+                                    <input type="text" name="name" class="form__input">
                                 </label>
                                 <label class="form__block">
                                     <div class="form__title">Телефон</div>
-                                    <input type="text" class="form__input">
+                                    <input type="text" name="phone" class="form__input">
                                 </label>
                             </div>
                             <div class="form__row">
@@ -750,7 +752,7 @@
                             <div class="form__row">
                                 <label class="form__block">
                                     <div class="form__title">Комментарий</div>
-                                    <textarea class="form__input form__input--textarea"></textarea>
+                                    <textarea name="comment" class="form__input form__input--textarea"></textarea>
                                 </label>
                             </div>
                             <div class="form__controls">
@@ -785,7 +787,7 @@
                 </div>
             </section>
 
-            <!-- <section class="section"> -->
+            <section class="section">
             <div class="container map">
                 <img src="./img/map.png" alt="map" class="map__img">
             </div>
@@ -859,6 +861,14 @@
         </ul>
     </nav>
 
+    <div id="modal" class="modal">
+        <div class="modal__container">
+            <div class="modal__content">Сообщение отправлено</div>
+            <div class="modal__button-container"><a href="#" class="btn js-submit-btn btn--theme--red">Закрыть</a></div>
+        </div>
+    </div>
+
+
 
     <div class="wrapper wrapper-fullscreen">
         <div class="fullscreen-menu">
@@ -880,12 +890,15 @@
     
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
     
 
     <script src="./js/fullscreen-menu.js"></script>
     <script src="./js/team.js"></script>
     <script src="./js/slideshow.js"></script>
     <script src="./js/slider.js"></script>
+    <script src="./js/modal.js"></script>
     
 
 </body>

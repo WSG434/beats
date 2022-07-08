@@ -13,6 +13,10 @@
     .products-menu__content {
       display: block;
       max-width: 532px;
+      overflow: hidden;
+      &-text{
+        display: block;
+      }
     }
   }
 }
@@ -62,11 +66,24 @@
 }
 
 .products-menu__content {
+  transition: .7s;
   background: rgba(47, 50, 52, .9);
-  padding: 40px 73px 45px 26px;
-  display: none;
+  width: 0;
   position: relative;
 }
+
+.products-menu__close{
+  display: none;
+}
+
+.products-menu__content-text
+{
+  display: none;
+  padding: 40px 73px 45px 26px;
+}
+
+
+
 
 .products-menu__close {
   position: absolute;

@@ -1671,6 +1671,10 @@ footer {
 .products-menu__item.active .products-menu__content {
   display: block;
   max-width: 532px;
+  overflow: hidden;
+}
+.products-menu__item.active .products-menu__content-text {
+  display: block;
 }
 
 .products-menu__image {
@@ -1719,10 +1723,20 @@ footer {
 }
 
 .products-menu__content {
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
   background: rgba(47, 50, 52, 0.9);
-  padding: 40px 73px 45px 26px;
-  display: none;
+  width: 0;
   position: relative;
+}
+
+.products-menu__close {
+  display: none;
+}
+
+.products-menu__content-text {
+  display: none;
+  padding: 40px 73px 45px 26px;
 }
 
 .products-menu__close {

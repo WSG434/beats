@@ -1756,3 +1756,22 @@ footer {
   bottom: 0;
   background: rgba(0, 0, 0, 0.2);
 }
+
+.how-section {
+  background: #f8faf9;
+}
+
+.how-section__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.video {
+  width: 660px;
+  height: 405px;
+  border: 1px solid black;
+}

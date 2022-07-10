@@ -3,9 +3,14 @@
 //   controls: false
 // });
 
+
+
 const slider = $('.slider__list').bxSlider({
+  //https://bxslider.com/install/
   pager: false,
-  controls: false
+  controls: false,
+  touchEnabled: false
+
 });
 
 $('.arrow--left').click((e) => {

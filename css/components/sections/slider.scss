@@ -14,14 +14,18 @@
 
   &__img{
     margin-right: rem(50px);
-    width: 45%;
+    width: 50%;
+    // width: 306px;
     position: relative;
     @include tablets{
       margin-right: 0;
+      width: 306px;
     }
 
     @include phones{
       margin-right: 0;
+      width: 306px;
+
     }
   }
 
@@ -167,6 +171,7 @@
   font-size: rem(36px);
   color: black;
   width: rem(40px);
+  
 
   // &__wrapper{
   //   position: relative;
@@ -182,18 +187,39 @@
   
 
   &--right{
-  position: absolute;
-  top:50%;
-  left:99%;
-  
+    position: absolute;
+    top:50%;
+    left:99%;
   }
 
   @include tablets{
     margin: 0;
+    z-index: 1;
+    &--right{
+      position: absolute;
+      top:20%;
+      left:85%;
+    };
+    &--left{
+      position: absolute;
+      top:20%;
+      left:10%;
+    };
   }
 
   @include phones {
     margin: 0;
+    z-index: 1;
+    &--right{
+      position: absolute;
+      top:20%;
+      left:93%;
+    };
+    &--left{
+      position: absolute;
+      top:20%;
+      left:0%;
+    };
   }
 
 

@@ -39,7 +39,18 @@ const init = () => {
   myMap.behaviors.disable('scrollZoom');
 
 
+  const isTablet = window.matchMedia("(max-width: 768px)").matches;
+  // const isPhone = window.matchMedia("(max-width: 480px)").matches;
+
+  if (isTablet) {
+    myMap.setZoom(13);
+  }
+
+
+
 
 };
+
+
 
 ymaps.ready(init);

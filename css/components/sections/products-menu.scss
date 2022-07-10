@@ -9,10 +9,12 @@
 .products-menu__item {
   display: flex;
 
+
+
   &.active {
     .products-menu__content {
       display: block;
-      max-width: 532px;
+      max-width: rem(532px);
       overflow: hidden;
       &-text{
         display: block;
@@ -31,6 +33,14 @@
 .products-menu__title {
   position: relative;
   width: 100px;
+  @include tablets{
+    width: 80px;
+  }
+
+  @include phones {
+    width: 60px;
+  }
+  
   
 
   &:after {
@@ -50,6 +60,13 @@
   top: 90px;
   left: 80px;
   color: #fff;
+  @include tablets{
+      left: 40px;
+  }
+
+  @include phones {
+    left: 10px;
+  }
 }
 
 .products-menu__text {
@@ -61,8 +78,15 @@
   transform-origin: 0 0;
   white-space: nowrap;
   line-height: 1;
-  font-size: 48px;
+  font-size: rem(48px);
   font-weight: bold;
+  @include tablets{
+      font-size: rem(36px);
+    }
+
+    @include phones {
+      font-size: rem(36px);
+    }
 }
 
 .products-menu__content {

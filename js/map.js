@@ -1,6 +1,7 @@
 let myMap;
 
 const init = () => {
+  //https://yandex.ru/dev/maps/jsapi/doc/2.1/dg/concepts/geoobjects.html
   myMap = new ymaps.Map("map", {
     center: [55.756709, 37.601607],
     zoom: 14,

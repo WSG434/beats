@@ -89,7 +89,7 @@ const progressBar = () => {
     $(".player__playback--filled").css({
       width: `${completedPercent}%`,
     });
-  }, 1000);
+  }, 100);
 };
 
 eventsInit();

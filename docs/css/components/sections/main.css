@@ -1373,7 +1373,7 @@ footer {
 @media screen and (max-width: 768px) {
   .arrow {
     margin: 0;
-    z-index: 1;
+    z-index: 100;
   }
   .arrow--right {
     position: absolute;
@@ -1389,7 +1389,7 @@ footer {
 @media screen and (max-width: 480px) {
   .arrow {
     margin: 0;
-    z-index: 1;
+    z-index: 100;
   }
   .arrow--right {
     position: absolute;

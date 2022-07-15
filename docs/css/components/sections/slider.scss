@@ -1,4 +1,4 @@
-.slider{
+.slider {
   display: flex;
   align-items: center;
   position: relative;
@@ -10,38 +10,39 @@
   }
 
 
-  
 
-  &__img{
+
+  &__img {
     margin-right: rem(50px);
     width: 50%;
     // width: 306px;
     position: relative;
-    @include tablets{
+
+    @include tablets {
       margin-right: 0;
       width: 306px;
     }
 
-    @include phones{
+    @include phones {
       margin-right: 0;
       width: 306px;
 
     }
   }
 
-  &__list{
+  &__list {
     // display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
 
-  &__item{
+  &__item {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    @include tablets{
+    @include tablets {
       flex-direction: column;
     }
 
@@ -50,37 +51,37 @@
     }
   }
 
-  &__dropdown{
+  &__dropdown {
     background: #9A9A9A;
     border-radius: rem(5px);
     padding: rem(25px);
     margin-bottom: rem(25px);
     cursor: pointer;
     position: relative;
-    
-    &:hover ~ .dropdown{
+
+    &:hover~.dropdown {
       display: flex;
     }
 
-    @include tablets{
-        display: none !important ;
-      }
+    @include tablets {
+      display: none !important;
+    }
 
     @include phones {
       display: none !important;
     }
 
-    
+
   }
 
-  &__content{
-    @include tablets{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        text-align: center;
-      }
+  &__content {
+    @include tablets {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+    }
 
     @include phones {
       display: flex;
@@ -91,45 +92,47 @@
     }
   }
 
-  &__title{
-    color:black;
+  &__title {
+    color: black;
     font-weight: 700;
-    text-transform: uppercase;  
+    text-transform: uppercase;
     font-size: rem(36px);
     margin-bottom: rem(24px);
   }
 
-  &__desc{
+  &__desc {
     font-size: rem(16px);
     margin-bottom: rem(27px);
     padding: 0 rem(30px) 0 0;
   }
 
-  &__text{
+  &__text {
     display: flex;
     justify-content: flex-start;
     align-items: center;
   }
 
-  &__price{
-    color:#151515;
+  &__price {
+    color: #151515;
     font-weight: 400;
     font-size: rem(36px);
     margin-right: rem(13px);
   }
-  
+
 }
 
-.features{
+.features {
   margin-bottom: rem(24px);
-  &__item{
+
+  &__item {
     margin-right: rem(84px);
   }
 
-  &__title{
+  &__title {
     font-size: rem(16px);
   }
-  &__desc{
+
+  &__desc {
     font-size: rem(18px);
     color: black;
     font-weight: 700;
@@ -167,11 +170,11 @@
 //   }
 // }
 
-.arrow{
+.arrow {
   font-size: rem(36px);
   color: black;
   width: rem(40px);
-  
+
 
   // &__wrapper{
   //   position: relative;
@@ -179,69 +182,82 @@
   //   height: 100%;
   // }
 
-  &--left{
+  &--left {
     position: absolute;
-    top:50%;
-    left:-3%;
-  }
-  
-
-  &--right{
-    position: absolute;
-    top:50%;
-    left:99%;
+    top: 50%;
+    left: -3%;
   }
 
-  @include tablets{
+
+  &--right {
+    position: absolute;
+    top: 50%;
+    left: 99%;
+  }
+
+  @include tablets {
     margin: 0;
-    z-index: 1;
-    &--right{
+    z-index: 100;
+
+    &--right {
       position: absolute;
-      top:20%;
-      left:85%;
-    };
-    &--left{
+      top: 20%;
+      left: 85%;
+    }
+
+    ;
+
+    &--left {
       position: absolute;
-      top:20%;
-      left:10%;
-    };
+      top: 20%;
+      left: 10%;
+    }
+
+    ;
   }
 
   @include phones {
     margin: 0;
-    z-index: 1;
-    &--right{
+    z-index: 100;
+
+    &--right {
       position: absolute;
-      top:20%;
-      left:93%;
-    };
-    &--left{
+      top: 20%;
+      left: 93%;
+    }
+
+    ;
+
+    &--left {
       position: absolute;
-      top:20%;
-      left:0%;
-    };
+      top: 20%;
+      left: 0%;
+    }
+
+    ;
   }
 
 
-  
+
 }
 
 
 
-.dropdown{
-  display:none;
+.dropdown {
+  display: none;
   position: absolute;
   top: rem(0px);
   // right: rem(100px);
-  right:70px;
+  right: 70px;
   border-radius: 4px;
   background: #FFFFFFCC;
   padding: rem(28px) rem(25px) rem(34px) rem(32px);
-  &:hover{
+
+  &:hover {
     display: flex;
   }
 
-  &:before{
+  &:before {
     content: "";
     display: block;
     height: 130px;
@@ -249,17 +265,17 @@
     left: -80px;
     right: 0;
     top: 90px;
-    position:absolute;
+    position: absolute;
   }
 
-  
 
-  &__menu{
+
+  &__menu {
     width: rem(220px);
-    height: rem(273px); 
+    height: rem(273px);
   }
 
-  &__list{
+  &__list {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -268,21 +284,21 @@
     transition: .3s;
   }
 
-  &__item{
+  &__item {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color:black;
+    color: black;
     font-size: rem(16px);
     font-weight: 400;
   }
 
-  &__info{
+  &__info {
     display: flex;
   }
 
 
-  &__ico{
+  &__ico {
     margin-right: rem(15px);
     width: rem(25px);
     height: rem(25px);

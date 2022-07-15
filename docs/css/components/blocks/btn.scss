@@ -1,0 +1,42 @@
+.btn {
+    border-radius: rem(35px);
+    padding: rem(15px) rem(29px);
+    font-size: rem(16px);
+    line-height: 1;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.3s;
+    max-width: rem(148px);
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    min-height: rem(50px);
+
+    &--theme--red {
+        color: $white;
+        background: $red;
+
+        &:hover {
+            background: $red--hover;
+            box-shadow: 0 0 rem(25px) 0 rgba(225, 0, 0, 0.134);
+
+        }
+    }
+
+    &--db {
+        display: block;
+    }
+
+    &--theme--transparent {
+        background: transparent;
+        color: $white;
+        text-transform: none;
+
+        &:hover {
+            color: $red;
+        }
+    }
+
+
+}

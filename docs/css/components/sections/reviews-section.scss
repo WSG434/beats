@@ -1,0 +1,11 @@
+.reviews-section{
+  position: relative;
+  &::before{
+    content: url("./../../../img/decor_reviews.svg");
+    position: absolute;
+    height: rem(36px);
+    width: rem(36px);
+    bottom: rem(-18px);
+    left: rem(62px);
+  }
+}

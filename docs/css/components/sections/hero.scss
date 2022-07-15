@@ -1,0 +1,105 @@
+.hero{
+  color: #000;
+  // border: rem(1px) solid rgb(255, 0, 234);
+  height: 100%;
+  
+  background-color: $white-bg;
+  height: 100vh;
+  min-height: rem(652px);
+  position: relative;
+
+  &:before, &:after {
+    @include tablets{
+      display: none;
+    }
+  }
+
+  &::before{
+    position: absolute;
+    content: url("./../../../img/decor_header.png");
+    bottom: rem(-30px);
+    left: 80%;
+  }  
+}
+
+
+
+
+
+.hero__container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: rem(25px) 0 rem(66px);
+  background: url("./../../../img/beats_header.png") right center / 50% auto no-repeat;
+
+  @include tablets {
+    background: none;
+    padding: rem(25px) 0 rem(45px);
+  }
+
+}
+
+.hero__title-section{
+  width: 35%;
+
+  @include tablets {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    &::before{
+      // content: url("./../../../img/beats_header-tablets.png");
+      content:"";
+      background: url("./../../../img/beats_header-tablets.png") center / auto no-repeat;
+      height: 33vh;
+      width: 50vw;
+      margin-bottom: 6.4vh;
+      background-size: contain;
+    }
+  }
+
+
+}
+
+.hero__icons-section{
+  @include tablets {
+    display: none;
+  }
+}
+
+.hero__main-title{
+  font-style: rem(48px);
+  line-height: 1.4;
+  font-weight: bold;
+  margin-bottom: rem(20px);
+  text-transform: uppercase;
+
+  @include tablets{
+    padding: 0 18%;
+    margin-bottom: rem(15px);
+  }
+
+  @include phones{
+    padding: 0 10%;
+    margin-bottom: rem(15px);
+  }
+}
+
+.hero__title-desc{
+  font-style: rem(21px);
+  margin-bottom: rem(55px);
+  padding-right: 10%;
+  width: 110%;
+
+  @include tablets{
+    padding: 0 30%;
+    margin-bottom: rem(15px);
+  }
+}
+

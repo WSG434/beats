@@ -1,0 +1,52 @@
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 36px 28px 30px;
+    width: 100%;
+    height: 100%;
+    &-container{
+      margin-top: auto;
+      // width: 100%;
+      // height: 100%;
+    }
+    @include phones{
+      margin-bottom: rem(10px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+}
+
+.footer__col {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    white-space: nowrap;
+    
+    &--align--right {
+      align-items: flex-end;
+      svg{
+        height: 32px;
+        width: 32px;
+      }
+    }
+
+    @include phones {
+      margin-bottom: rem(15px);
+      align-items: center;
+      justify-content: center;
+    }
+
+}
+
+.footer-section{
+  min-height: 0;
+  height: auto;
+}
+
+
+/* Socials */
+
+

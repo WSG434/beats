@@ -1,0 +1,155 @@
+.team{
+
+  &__list{
+    display: flex;
+    position: relative;
+  
+    @include tablets{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    @include phones {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    
+  }
+
+  &--version--desktop{
+    .team__item{
+      margin-right: rem(25px);
+      &:last-child{
+      margin-right: 0;
+    }
+    }
+    .team__desc{
+      position: absolute;
+      max-width: rem(220px);
+      width: 21vw;
+    }
+    @include tablets{
+      display: none;
+    }
+
+    @include phones {
+      display: none;
+    }
+  }
+
+  &--version--mobile{
+    display: none;
+    // position: absolute;
+    // left: 50%;
+    // top: 100%;
+    // transform: translate(-50%,50%);
+
+    @include tablets{
+      display: flex;
+    }
+
+    @include phones {
+      display: flex;
+    }
+
+  }
+
+  &__item{
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    max-width: rem(220px);
+    text-align: center;
+    
+    // @include tablets{
+    //   display: flex;
+    //   flex-direction: column;
+    // }
+
+    // @include phones {
+    //   display: flex;
+    //   flex-direction: column;
+    // }
+
+  }
+
+  &__avatar{
+    width: 100%;
+    height: 100%;
+    max-height: rem(290px);
+    object-fit: cover;
+    margin-bottom: rem(25px);
+  }
+
+  
+
+
+  &__member{
+    margin-bottom: rem(11px);
+    font-size: rem(18px);
+    font-weight: 700;
+    color: $black;
+    position: relative;
+    &:after{
+      content:"";
+      position: absolute;
+      top:8px;
+      right:-15px;
+      border: 8px solid transparent;
+      width: 0px;
+      height: 0px;
+      border-top-color: red;
+      border-bottom-width: 0;
+      border-left-width: 4px;
+      border-right-width: 4px;
+    }
+    .active &:after{
+      content:"";
+      position: absolute;
+      top:8px;
+      right:-15px;
+      border: 8px solid transparent;
+      width: 0px;
+      height: 0px;
+      border-bottom-color: red;
+      border-top-width: 0;
+      border-left-width: 4px;
+      border-right-width: 4px;
+    }
+
+
+  }  
+  
+
+  
+
+  &__role{
+    color: $black;
+    font-size: rem(16px);
+    font-weight: 400;
+    margin-bottom: rem(4px);
+  }
+
+  &__role-desc{
+    color: $gray;
+    font-weight: 400;
+    font-size: rem(16px);
+  }
+
+  &__desc{
+    // position: absolute;
+    // top:100%;
+    display: block;
+    height: 0;
+    overflow: hidden;
+    transition: height .3s;
+  
+  
+  }
+
+  
+}

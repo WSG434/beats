@@ -1,0 +1,63 @@
+$baseFontFamily: 'Play';
+$containerWidth: 940px;
+$baseFontSize: 18px;
+
+
+//breakpoints
+
+$tablets: 768px;
+$phones: 480px;
+
+
+
+//colors
+$white: #fff;
+$black: #292929;
+$gray: #666666;
+$red: #E01F3D;
+$red--hover: #CA1B36;
+$white-bg: #F5F5F5;
+
+@import "./../../layout/media.scss";
+
+
+//setups
+@import "./../../layout/normalize.css";
+@import "./../../layout/base.scss";
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+
+//z-indexes
+$z-fixed-menu: 100;
+
+//components
+@import "./hero.scss";
+@import "./header.scss";
+@import "./features.scss";
+@import "./../blocks/btn.scss";
+@import "./section.scss";
+@import "./headline.scss";
+@import "./benefits.scss";
+@import "./benefit.scss";
+@import "./reviews.scss";
+@import "./../blocks/interactive-avatar.scss";
+@import "./reviews-section.scss";
+@import "./form.scss";
+@import "./order.scss";
+@import "./../blocks/radio.scss";
+@import "./fixed-menu.scss";
+@import "./../blocks/hamburger.scss";
+@import "./footer.scss";
+@import "./../blocks/fullscreen-menu.scss";
+@import "./map.scss";
+@import "./slider.scss";
+@import "./slider-section.scss";
+@import "./../blocks/socials.scss";
+@import "./team.scss";
+@import "./../blocks/modal.scss";
+@import "./products-menu.scss";
+@import "./products-section.scss";
+@import "./player.scss";
+
+
+
+

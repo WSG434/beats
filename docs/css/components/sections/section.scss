@@ -1,0 +1,41 @@
+.section{
+  // height: 100vh;
+  height: 100%;
+  min-height: rem(650px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &--font-color--white{
+    color:$white;
+    .section__title{
+      color: inherit;
+    }
+  }
+
+}
+
+.section__title{
+  font-size: rem(48px);
+  font-weight: bold;
+  line-height: 1.3;
+  margin-bottom: rem(60px);
+  text-align: center;
+  text-transform: uppercase;
+  color: $black;
+  
+}
+
+@include tablets {
+  .section__title--order{
+    white-space: nowrap;
+    margin-bottom: rem(15px);
+  }
+}
+
+  @include phones {
+    .section__title--order{
+      font-size: rem(32px);
+      white-space: wrap;
+    }
+}

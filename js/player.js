@@ -73,13 +73,13 @@ $(".player__volume").click((e) => {
 
 const progressBar = () => {
   let interval;
-  const durationSec = myVid.duration;
 
   if (typeof interval !== "undefined") {
     clearInterval(interval);
   }
 
   interval = setInterval(() => {
+    const durationSec = myVid.duration;
     const completedSec = myVid.currentTime;
     const completedPercent = (completedSec / durationSec) * 100;
 

@@ -1874,6 +1874,7 @@ footer {
   left: 0;
   right: 0;
   bottom: 0;
+  background: url("./../../../img/splashscreen.jpg") center center/cover no-repeat;
   cursor: pointer;
 }
 .player__splash:before {

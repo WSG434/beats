@@ -1,33 +1,3 @@
-
-//YouTube из коробки;
-
-// .how-section {
-//   background: #f8faf9;
-// }
-
-// .how-section__container {
-//   display: flex;
-//   justify-content: center;
-// }
-
-// .video {
-//   width: 660px;
-//   height: 405px;
-//   border: 1px solid black;
-// }
-
-
-
-
-
-
-
-
-
-
-
-// LoftSchool + HTML5
-
 .player-section {
   background: #f8faf9;
 }
@@ -37,25 +7,19 @@
   justify-content: center;
 }
 
-// .video {
-//   width: 660px;
-//   height: 405px;
-//   border: 1px solid black;
-// }
-
 
 .player {
   position: relative;
   display: block;
   width: 100%;
   max-width: 660px;
-  // height: 100%;
   overflow: hidden;
 
   &.hidden {
     opacity: 0;
     transition: opacity 0.3s;
   }
+
   &.active .player__splash {
     display: none;
   }
@@ -67,7 +31,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  // background: url("./../../../img/splashscreen.jpg") center center / cover no-repeat;
+  background: url("./../../../img/splashscreen.jpg") center center / cover no-repeat;
   cursor: pointer;
 
   &:before {
@@ -94,7 +58,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 3%;
-  transition:all .3s;
+  transition: all .3s;
   transform: translateY(100%) translateY(0px);
 }
 
@@ -104,22 +68,22 @@
 
 .player__start {
   min-width: 20px;
-  border:0;
-  line-height:1;
-  color:white;
+  border: 0;
+  line-height: 1;
+  color: white;
   text-align: center;
   padding: 0;
-  cursor:pointer;
-  max-width:50px;
+  cursor: pointer;
+  max-width: 50px;
   background: transparent;
   outline: none;
   position: relative;
-  
-  
+
+
 }
 
-.player__volume-ico{
-  &::before{
+.player__volume-ico {
+  &::before {
     content: url("./../../../img/volume.svg");
   }
 }
@@ -127,12 +91,11 @@
 .player__playback {
   height: rem(16px);
   position: relative;
-  // flex: 1;
   width: 80%;
   margin: 0 rem(15px);
-  
-  &--volume{
-  width: 10%;
+
+  &--volume {
+    width: 10%;
   }
 
   &:before {
@@ -147,7 +110,7 @@
     transform: translateY(-50%);
   }
 
-  &--filled{
+  &--filled {
     height: rem(4px);
     position: absolute;
     top: 50%;
@@ -193,7 +156,7 @@
     transform: translateY(-50%);
   }
 
-  &--filled{
+  &--filled {
     height: rem(4px);
     position: absolute;
     top: 50%;
@@ -231,264 +194,4 @@
 
 .player__elem {
   width: 100%;
-  // height: 100%;
 }
-
-
-
-
-
-
-//HTML5 codepen
-
-// html {
-//   box-sizing: border-box;
-// }
-
-// *, *:before, *:after {
-//   box-sizing: inherit;
-// }
-
-// body {
-//   margin: 0;
-//   padding: 0;
-//   display:flex;
-//   background:#7A419B;
-//   min-height:100vh;
-//   background: linear-gradient(135deg, #7c1599 0%,#921099 48%,#7e4ae8 100%);
-//   background-size:cover;
-//   align-items: center;
-//   justify-content: center;
-// }
-
-// .player {
-//   max-width:750px;
-//   border:5px solid rgba(0,0,0,0.2);
-//   box-shadow:0 0 20px rgba(0,0,0,0.2);
-//   position: relative;
-//   font-size: 0;
-//   overflow: hidden;
-// }
-
-// /* This css is only applied when fullscreen is active. */
-// .player:fullscreen {
-//   max-width: none;
-//   width: 100%;
-// }
-
-// .player:-webkit-full-screen {
-//   max-width: none;
-//   width: 100%;
-// }
-
-// .player__video {
-//   width: 100%;
-// }
-
-// .player__button {
-//   background:none;
-//   border:0;
-//   line-height:1;
-//   color:white;
-//   text-align: center;
-//   outline:0;
-//   padding: 0;
-//   cursor:pointer;
-//   max-width:50px;
-// }
-
-// .player__button:focus {
-//   border-color: #ffc600;
-// }
-
-// .player__slider {
-//   width:10px;
-//   height:30px;
-// }
-
-// .player__controls {
-//   display:flex;
-//   position: absolute;
-//   bottom:0;
-//   width: 100%;
-//   transform: translateY(100%) translateY(-5px);
-//   transition:all .3s;
-//   flex-wrap:wrap;
-//   background:rgba(0,0,0,0.1);
-// }
-
-// .player:hover .player__controls {
-//   transform: translateY(0);
-// }
-
-// .player:hover .progress {
-//   height:15px;
-// }
-
-// .player__controls > * {
-//   flex:1;
-// }
-
-// .progress {
-// /*   flex:10; */
-//   position: relative;
-//   display:flex;
-//   flex-basis:60%;
-//   height:5px;
-//   transition:height 0.3s;
-//   background:rgba(0,0,0,0.5);
-//   cursor:ew-resize;
-// }
-
-// .progress__filled {
-//   width:50%;
-//   background:#ffc600;
-//   flex:0;
-//   flex-basis:50%;
-// }
-
-// /* unholy css to style input type="range" */
-
-// input[type=range] {
-//   -webkit-appearance: none;
-//   background:transparent;
-//   width: 100%;
-//   margin: 0 5px;
-// }
-// input[type=range]:focus {
-//   outline: none;
-// }
-// input[type=range]::-webkit-slider-runnable-track {
-//   width: 100%;
-//   height: 8.4px;
-//   cursor: pointer;
-//   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0), 0 0 1px rgba(13, 13, 13, 0);
-//   background: rgba(255,255,255,0.8);
-//   border-radius: 1.3px;
-//   border: 0.2px solid rgba(1, 1, 1, 0);
-// }
-// input[type=range]::-webkit-slider-thumb {
-//   height: 15px;
-//   width: 15px;
-//   border-radius: 50px;
-//   background: #ffc600;
-//   cursor: pointer;
-//   -webkit-appearance: none;
-//   margin-top: -3.5px;
-//   box-shadow:0 0 2px rgba(0,0,0,0.2);
-// }
-// input[type=range]:focus::-webkit-slider-runnable-track {
-//   background: #bada55;
-// }
-// input[type=range]::-moz-range-track {
-//   width: 15%;
-//   height: 8.4px;
-//   cursor: pointer;
-//   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0), 0 0 1px rgba(13, 13, 13, 0);
-//   background: #ffffff;
-//   border-radius: 1.3px;
-//   border: 0.2px solid rgba(1, 1, 1, 0);
-// }
-// input[type=range]::-moz-range-thumb {
-//   box-shadow: 0 0 0 rgba(0, 0, 0, 0), 0 0 0 rgba(13, 13, 13, 0);
-//   height: 15px;
-//   width: 15px;
-//   border-radius: 50px;
-//   background: #ffc600;
-//   cursor: pointer;
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// HTML5 Video api
-
-// video{
-//   height: 100%;
-//   width: 100%;
-// }
-
-// .controls {
-//   visibility: hidden;
-//   opacity: 0.5;
-//   width: 400px;
-//   border-radius: 10px;
-//   position: absolute;
-//   bottom: 20px;
-//   left: 50%;
-//   margin-left: -200px;
-//   background-color: black;
-//   box-shadow: 3px 3px 5px black;
-//   transition: 1s all;
-//   display: flex;
-// }
-
-// .player:hover .controls, 
-// .player:focus-within .controls {
-//   opacity: 1;
-// }
-
-// .timer {
-//   line-height: 38px;
-//   font-size: 10px;
-//   font-family: monospace;
-//   text-shadow: 1px 1px 0px black;
-//   color: white;
-//   flex: 5;
-//   position: relative;
-// }
-
-// .timer div {
-//   position: absolute;
-//   background-color: rgba(255,255,255,0.2);
-//   left: 0;
-//   top: 0;
-//   width: 0;
-//   height: 38px;
-//   z-index: 2;
-// }
-
-// .timer span {
-//   position: absolute;
-//   z-index: 3;
-//   left: 19px;
-// }
-
-// button:before {
-//   font-family: HeydingsControlsRegular;
-//   font-size: 20px;
-//   position: relative;
-//   content: attr(data-icon);
-//   color: #aaa;
-//   text-shadow: 1px 1px 0px black;
-// }
-
-
-
-
-
-
-
-

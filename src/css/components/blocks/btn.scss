@@ -13,30 +13,30 @@
     cursor: pointer;
     min-height: rem(50px);
 
-    &--theme--red{
+    &--theme--red {
         color: $white;
         background: $red;
-        
+
         &:hover {
-        background: $red--hover;
-        box-shadow: 0 0 rem(25px) 0 rgba(225, 0, 0, 0.134);
+            background: $red--hover;
+            box-shadow: 0 0 rem(25px) 0 rgba(225, 0, 0, 0.134);
 
         }
     }
 
-    &--db{
+    &--db {
         display: block;
     }
 
-    &--theme--transparent{
+    &--theme--transparent {
         background: transparent;
         color: $white;
         text-transform: none;
-        
+
         &:hover {
-        color: $red;
-    }
+            color: $red;
+        }
     }
 
-    
+
 }
